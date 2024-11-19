@@ -214,47 +214,40 @@ h3::after {
 }
 
 .project-container {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    background-color: var(--card-background);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .project-info {
     padding: 3rem;
     text-align: center;
+    
 }
 
 .project-info h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .project-info p {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--secondary-color);
+    color: #fff;
 }
 
 .project-info ul {
     list-style-type: none;
     margin-bottom: 2rem;
+    
 }
 
 .project-info ul li {
     margin-bottom: 0.8rem;
-    color: var(--text-color);
-    font-size: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .info-btn {
@@ -279,22 +272,24 @@ h3::after {
 
 .project-images {
     display: flex;
-    justify-content: space-between;
-    padding: 0 3rem 3rem;
+    justify-content: center;
+    gap: 5%; /* Incrementa el espacio entre imágenes */
+    margin-top: 2rem;
 }
 
 .project-images img {
-    width: 48%;
+    width: 55%; /* Aumenta el tamaño de las imágenes */
     height: auto;
     object-fit: cover;
     border-radius: 12px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* Efecto hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras para destacar las imágenes */
 }
 
 .project-images img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efecto de ampliación */
 }
+
 
 .whatsapp-btn {
     position: fixed;
@@ -451,3 +446,143 @@ h3::after {
     transition: background-color 0.3s ease;
 }
 
+.baay-section {
+    position: relative; /* Para manejar un overlay encima */
+    height: 100vh; /* Ocupa todo el alto del viewport */
+    width: 100%; /* Ocupa todo el ancho */
+    background-image: url('../images/baay/baay_88-frontview.jpg');
+    background-size: cover; /* Escalar para cubrir el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición */
+    color: white; /* Asegúrate de que el texto sea visible */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Envíalo detrás del overlay */
+}
+
+.baay-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra con opacidad */
+    z-index: 1; /* Superpone sobre la imagen */
+}
+
+.baay-section .project-container {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre la imagen y overlay */
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+.brahma-section {
+    position: relative; /* Para manejar un overlay encima */
+    height: 100vh; /* Ocupa todo el alto del viewport */
+    width: 100%; /* Ocupa todo el ancho */
+    background-image: url('../images/brahma/FACHADA\ FRONTAL_A01\ copia.jpg');
+    background-size: cover; /* Escalar para cubrir el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición */
+    color: white; /* Asegúrate de que el texto sea visible */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Envíalo detrás del overlay */
+}
+
+.brahma-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra con opacidad */
+    z-index: 1; /* Superpone sobre la imagen */
+}
+
+.brahma-section .project-container {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre la imagen y overlay */
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.xanbel-section {
+    position: relative; /* Para manejar un overlay encima */
+    height: 100vh; /* Ocupa todo el alto del viewport */
+    width: 100%; /* Ocupa todo el ancho */
+    background-image: url('../images/xanbel/Roof\ Garden.jpg');
+    background-size: cover; /* Escalar para cubrir el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición */
+    color: white; /* Asegúrate de que el texto sea visible */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Envíalo detrás del overlay */
+}
+
+.xanbel-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra con opacidad */
+    z-index: 1; /* Superpone sobre la imagen */
+}
+
+.xanbel-section .project-container {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre la imagen y overlay */
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.tulum-section {
+    position: relative; /* Para manejar un overlay encima */
+    height: 100vh; /* Ocupa todo el alto del viewport */
+    width: 100%; /* Ocupa todo el ancho */
+    background-image: url('../images/tulum/3.\ \ Exterior\ 03\ final.jpg');
+    background-size: cover; /* Escalar para cubrir el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición */
+    color: white; /* Asegúrate de que el texto sea visible */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Envíalo detrás del overlay */
+}
+
+.tulum-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra con opacidad */
+    z-index: 1; /* Superpone sobre la imagen */
+}
+
+.tulum-section .project-container {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre la imagen y overlay */
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
