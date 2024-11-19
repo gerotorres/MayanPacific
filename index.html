@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayan Pacific Realty</title>
+    <title>Mayan Pacific Realty - Propiedades de Lujo en la Riviera Maya</title>
     <link rel="stylesheet" href="/styles/index.css">
-
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -17,75 +20,137 @@
             <img src="images/logomayan.png" alt="Mayan Pacific Realty Logo" class="logo">
             <button class="contact-btn">Contacto</button>
         </nav>
-        <!-- <video autoplay loop muted>
-            <source src="/placeholder-video.mp4" type="video/mp4">
-        </video> -->
-        <img src="images/xanbel/COCINA 1.png" class="images">
+        <img src="images/xanbel/COCINA 1.png" class="images" alt="Imagen de portada de una propiedad de lujo">
         <div class="scroll-indicator">
-            <p>Ver más propiedades</p>
-            <i data-lucide="chevron-down"></i>
-        </div>
+            <p>Descubre Nuestras Propiedades</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>        
     </header>
+
     <main>
         <section id="projects">
-            <h2>Our Projects</h2>
+            <h2>Nuestros Proyectos</h2>
             <div class="carousel">
                 <button class="carousel-btn prev" aria-label="Proyecto anterior">
                     <i data-lucide="chevron-left"></i>
                 </button>
                 <div class="carousel-container">
-                    <div class="carousel-item"><img src="images/tulum/3.  Exterior 03 final.jpg" alt="Proyecto 1"></div>
-                    <div class="carousel-item active"><img src="images/tulum/2. Proyecto 2.jpg" alt="Proyecto 2"></div>
-                    <div class="carousel-item"><img src="images/tulum/1. Proyecto 3.jpg" alt="Proyecto 3"></div>
+                    <div class="carousel-item"><img src="images/FACHADA FRONTAL_A01 copia.jpg" alt="Vista exterior de un proyecto en Tulum"></div>
+                    <div class="carousel-item"><img src="images/F-Aérea final.jpg" alt="Interior moderno de un proyecto en Tulum"></div>
+                    <div class="carousel-item"><img src="images/POSTERIOR_1 copia.jpg" alt="Área de piscina de un proyecto en Tulum"></div>
                 </div>
                 <button class="carousel-btn next" aria-label="Proyecto siguiente">
                     <i data-lucide="chevron-right"></i>
                 </button>
             </div>
-            <h3>Mayan Pacific Realty</h3>
+            <h3>Mayan Pacific Realty - Lujo y Tranquilidad en la Riviera Maya</h3>
         </section>
         
-        <section id="featured-project">
-            <h2>Baay</h2>
-            <p>Nuestro proyecto insignia en Playa del Carmen</p>
-            <div class="project-images">
-                <img src="images/baay/BAAY EDIFICIO MONTAJE COMPLETO.jpg" alt="Baay Render 1">
-                <img src="images/baay/gym,.jpg" alt="Baay Render 2">
+        <section id="featured-project" class="project-section">
+            <div class="project-container">
+                <div class="project-info">
+                    <h2>Baay</h2>
+                    <p>Un oasis de serenidad en Playa del Carmen</p>
+                    <ul>
+                        <li>Ubicación privilegiada frente al mar</li>
+                        <li>Diseño contemporáneo inspirado en la cultura maya</li>
+                        <li>Amenidades de lujo para un estilo de vida excepcional</li>
+                    </ul>
+                    <button class="info-btn">Descubre Baay</button>
+                </div>
+                <div class="project-images">
+                    <img src="images/baay/BAAY EDIFICIO MONTAJE COMPLETO.jpg" alt="Vista exterior de Baay">
+                    <img src="images/baay/gym,.jpg" alt="Gimnasio de lujo en Baay">
+                </div>
             </div>
-            <button class="info-btn">Obtener más información</button>
         </section>
 
-        <section class="project">
-            <h2>Bramah</h2>
-            <div class="project-images">
-                <img src="images/brahma/F-Aérea final.jpg" alt="Proyecto 2 Render 1">
-                <img src="images/brahma/FACHADA FRONTAL_A01 copia.jpg" alt="Proyecto 2 Render 2">
+        <section class="project-section">
+            <div class="project-container">
+                <div class="project-info">
+                    <h2>Brahma</h2>
+                    <p>Lujo y confort en el corazón de Tulum</p>
+                    <ul>
+                        <li>Arquitectura vanguardista en armonía con la naturaleza</li>
+                        <li>Espacios amplios y luminosos con acabados de primera</li>
+                        <li>Acceso privado a playa virgen</li>
+                    </ul>
+                    <button class="info-btn">Explora Bramah</button>
+                </div>
+                <div class="project-images">
+                    <img src="images/brahma/F-Aérea final.jpg" alt="Vista aérea de Bramah">
+                    <img src="images/brahma/FACHADA FRONTAL_A01 copia.jpg" alt="Fachada frontal de Bramah">
+                </div>
             </div>
-            <button class="info-btn">Obtener más información</button>
         </section>
 
-        <section class="project">
-            <h2>Xanbel</h2>
-            <div class="project-images">
-                <img src="images/xanbel/COCINA 1.png" alt="Proyecto 3 Render 1">
-                <img src="images/xanbel/Roof Garden.jpg" alt="Proyecto 3 Render 2">
+        <section class="project-section">
+            <div class="project-container">
+                <div class="project-info">
+                    <h2>Xanbel</h2>
+                    <p>Exclusividad y sofisticación en cada detalle</p>
+                    <ul>
+                        <li>Acabados de lujo con materiales locales sostenibles</li>
+                        <li>Vistas panorámicas al Mar Caribe</li>
+                        <li>Spa y centro de bienestar privado</li>
+                    </ul>
+                    <button class="info-btn">Conoce Xanbel</button>
+                </div>
+                <div class="project-images">
+                    <img src="images/xanbel/COCINA 1.png" alt="Cocina de lujo en Xanbel">
+                    <img src="images/xanbel/Roof Garden.jpg" alt="Jardín en la azotea de Xanbel">
+                </div>
             </div>
-            <button class="info-btn">Obtener más información</button>
         </section>
 
-        <section class="project">￼ ￼Contacto
-            <h2>Tulum</h2>
-            <div class="project-images">
-                <img src="images/tulum/6. Sala final.jpg" alt="Proyecto 4 Render 1">
-                <img src="images/tulum/7. Recámara 04 final.jpg" alt="Proyecto 4 Render 2">
+        <section class="project-section">
+            <div class="project-container">
+                <div class="project-info">
+                    <h2>Tulum Serenity</h2>
+                    <p>Armonía perfecta entre modernidad y naturaleza</p>
+                    <ul>
+                        <li>Ubicación estratégica cerca de cenotes y ruinas mayas</li>
+                        <li>Diseño bioclimático para máximo confort y eficiencia</li>
+                        <li>Experiencia de vida única en comunión con la selva</li>
+                    </ul>
+                    <button class="info-btn">Descubre Tulum Serenity</button>
+                </div>
+                <div class="project-images">
+                    <img src="images/tulum/6. Sala final.jpg" alt="Sala de estar en Tulum Serenity">
+                    <img src="images/tulum/7. Recámara 04 final.jpg" alt="Dormitorio principal en Tulum Serenity">
+                </div>
             </div>
-            <button class="info-btn">Obtener más información</button>
         </section>
     </main>
 
     <a href="https://wa.me/1234567890" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
         <i data-lucide="message-circle"></i>
     </a>
+
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="full-name">Nombre Completo:</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Ingresa tu nombre completo">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+                <label for="phone">Teléfono de Contacto:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Ingresa tu número de teléfono" />
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required placeholder="Escribe tu mensaje..."></textarea>
+
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
 
     <script>
         lucide.createIcons();
